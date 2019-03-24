@@ -1,6 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './components/App'
+export const SET_AUTHED_USER = 'SET_AUTHED_USER'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+export function setAuthedUser(id){
+    return {
+        type: SET_AUTHED_USER,
+        id
+    }
+}
